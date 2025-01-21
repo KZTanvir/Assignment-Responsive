@@ -1,0 +1,1576 @@
+<!doctype html>
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BA Automation | Dashboard</title>
+    <!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="BA Automation | Dashboard" />
+    <meta name="author" content="ColorlibHQ" />
+    <meta
+      name="description"
+      content="BA Automation is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS."
+    />
+    <meta
+      name="keywords"
+      content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard"
+    />
+    <!--end::Primary Meta Tags-->
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
+      integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q="
+      crossorigin="anonymous"
+    />
+    <!--end::Fonts-->
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/styles/overlayscrollbars.min.css"
+      integrity="sha256-tZHrRjVqNSRyWg2wbppGnT833E/Ys0DHWGwT04GiqQg="
+      crossorigin="anonymous"
+    />
+    <!--end::Third Party Plugin(OverlayScrollbars)-->
+    <!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--end::Third Party Plugin(Bootstrap Icons)-->
+    <!--begin::Required Plugin(BA Automation)-->
+    <link rel="stylesheet" href="../../dist/css/adminlte.css" />    
+    <link rel="stylesheet" href="../../dist/css/custom.css" />
+    <!--end::Required Plugin(BA Automation)-->
+    <!-- apexcharts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
+      integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0="
+      crossorigin="anonymous"
+    />
+    <!-- jsvectormap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css"
+      integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4="
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--end::Head-->
+  <!--begin::Body-->
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+      <!--begin::Header-->
+      <nav class="app-header navbar navbar-expand bg-body">
+        <!--begin::Container-->
+        <div class="container-fluid">
+          <!--begin::Start Navbar Links-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                <i class="bi bi-list"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Portal</a></li>
+            <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item d-none d-md-block">
+                <a class="nav-link text-danger">
+                    <i style="font-size:smaller;">last-login: 19-jan 2025 10:25</i>
+                </a>
+            </li>
+          </ul>
+          <!--end::Start Navbar Links-->
+          <!--begin::End Navbar Links-->
+          <ul class="navbar-nav ms-auto">
+            <!--begin::Messages Dropdown Menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#">
+                <i class="bi bi-chat-text"></i>
+                <span class="navbar-badge badge text-bg-danger">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="https://avatars.githubusercontent.com/u/124804475?v=4"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        Nazmus Saif
+                        <span class="float-end fs-7 text-danger"
+                          ><i class="bi bi-star-fill"></i
+                        ></span>
+                      </h3>
+                      <p class="fs-7">I have done the frontend via react. You just have to build it and integrate with flask....</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 2 Days Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="https://avatars.githubusercontent.com/u/28010975?v=4"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        Menuka Rathnayake
+                        <span class="float-end fs-7 text-secondary">
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </h3>
+                      <p class="fs-7">bkash PGW integration with flask is not working</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="https://avatars.githubusercontent.com/u/79379934?v=4"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        Yuukio Fuyu
+                        <span class="float-end fs-7 text-warning">
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </h3>
+                      <p class="fs-7">A new serverless cloudflare worker script link is given....</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+              </div>
+            </li>
+            <!--end::Messages Dropdown Menu-->
+            <!--begin::Notifications Dropdown Menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#">
+                <i class="bi bi-bell-fill"></i>
+                <span class="navbar-badge badge text-bg-warning">15</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <span class="dropdown-item dropdown-header">3 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="bi bi-envelope me-2"></i> 3 new messages
+                  <span class="float-end text-secondary fs-7">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="bi bi-people-fill me-2"></i> New friend requests
+                  <span class="float-end text-secondary fs-7">Just Now</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer"> See All Notifications </a>
+              </div>
+            </li>
+            <!--end::Notifications Dropdown Menu-->
+            <!--begin::Fullscreen Toggle-->
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-lte-toggle="fullscreen">
+                <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
+                <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
+              </a>
+            </li>
+            <!--end::Fullscreen Toggle-->
+            <!--begin::User Menu Dropdown-->
+            <li class="nav-item dropdown user-menu">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <img
+                  src="https://kztanvir.github.io/img/df.png"
+                  class="user-image rounded-circle shadow"
+                  alt="User Image"
+                />
+                <span class="d-none d-md-inline">KZTanvir</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <!--begin::User Image-->
+                <li class="user-header text-bg-warning">
+                  <img
+                    src="https://kztanvir.github.io/img/df.png"
+                    class="rounded-circle shadow"
+                    alt="User Image"
+                  />
+                  <p>
+                    KZTanvir - Web Developer
+                    <small>Member since Nov. 2021</small>
+                  </p>
+                </li>
+                <!--end::User Image-->
+                <!--begin::Menu Body-->
+                <li class="user-body">
+                  <!--begin::Row-->
+                  <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="https://github.com/KZTanvir">GitHub</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="https://www.linkedin.com/in/kztanvir/">LinkedIn</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="https://www.facebook.com/KZTanvirX/">Facebook</a>
+                    </div>
+                  </div>
+                  <!--end::Row-->
+                </li>
+                <!--end::Menu Body-->
+                <!--begin::Menu Footer-->
+                <li class="user-footer">
+                  <a href="#" class="btn btn-success btn-flat">Profile</a>
+                  <a href="#" class="btn btn-danger btn-flat float-end">Sign out</a>
+                </li>
+                <!--end::Menu Footer-->
+              </ul>
+            </li>
+            <!--end::User Menu Dropdown-->
+          </ul>
+          <!--end::End Navbar Links-->
+        </div>
+        <!--end::Container-->
+      </nav>
+      <!--end::Header-->
+      <!--begin::Sidebar-->
+      <aside class="app-sidebar bg-body-tertiary shadow" data-bs-theme="dark">
+        <!--begin::Sidebar Brand-->
+        <div class="sidebar-brand">
+          <!--begin::Brand Link-->
+          <a href="./main.html" class="brand-link">
+            <!--begin::Brand Image-->
+            <img
+              src="../../dist/assets/img/companylogo-small.png"
+              alt="BA Automation"
+              class="brand-image shadow"
+            />
+            <!--end::Brand Image-->
+            <!--begin::Brand Text-->
+            <span class="brand-text fw-bold text-success">BA Automation</span>
+            <!--end::Brand Text-->
+          </a>
+          <!--end::Brand Link-->
+        </div>
+        
+        <!--end::Sidebar Brand-->
+        <!--begin::Sidebar Wrapper-->
+        <div class="sidebar-wrapper">
+          <nav class="mt-2">
+            <!--begin::Sidebar Menu-->
+            <ul
+              class="nav sidebar-menu flex-column"
+              data-lte-toggle="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon bi bi-speedometer"></i>
+                  <p>
+                    Dashboard
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./main.html" class="nav-link active">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Project Registraion</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./main.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Sub Panel 1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./main.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Sub Panel 2</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon bi bi-box-seam-fill"></i>
+                  <p>
+                    Portal
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>About</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Contact</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Home</p>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Slider</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--end::Sidebar Menu-->
+          </nav>
+        </div>
+        <!--end::Sidebar Wrapper-->
+      </aside>
+      <!--end::Sidebar-->
+      <!--begin::App Main-->
+      <main class="app-main">
+        <!--begin::App Content Header-->
+        <div class="app-content-header">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row">
+              <div class="col-sm-6"><h3 class="mb-0">Project Regsitration</h3></div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Project Regsitration</li>
+                </ol>
+              </div>
+            </div>
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+        </div>
+        <!--end::App Content Header-->
+        <!--begin::App Content-->
+        <div class="app-content">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="row g-4">
+              <!--begin::Col-->
+              <div class="col-md-12">
+                <div class="card card-warning shadow-none border-warning mb-2">
+                  <!--begin::Header-->
+                  <div class="card-header"><div class="card-title">Apply Industrial Project Registration to Bangladesh</div></div>
+                  <!--end::Header-->  
+                  <div class="m-2">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-step1-tab" data-bs-toggle="pill" href="#pills-step1" role="tab" aria-controls="pills-step1" aria-selected="true">
+                                <span class="fw-bold">1.</span> Registration Info
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-step2-tab" data-bs-toggle="pill" href="#pills-step2" role="tab" aria-controls="pills-step2" aria-selected="false">
+                                <span class="fw-bold">2.</span> List of Directors
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-step3-tab" data-bs-toggle="pill" href="#pills-step3" role="tab" aria-controls="pills-step3" aria-selected="false">
+                                <span class="fw-bold">3.</span> List of Machineries
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-step4-tab" data-bs-toggle="pill" href="#pills-step4" role="tab" aria-controls="pills-step4" aria-selected="false">
+                                <span class="fw-bold">4.</span> Attachments <i class="fas fa-question-circle text-dark mr-2"></i> 
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-step5-tab" data-bs-toggle="pill" href="#pills-step5" role="tab" aria-controls="pills-step5" aria-selected="false">
+                                <span class="fw-bold">5.</span> Declaration <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-step6-tab" data-bs-toggle="pill" href="#pills-step6" role="tab" aria-controls="pills-step6" aria-selected="false">
+                                <span class="fw-bold">6.</span> Payment & Submit
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-step1" role="tabpanel" aria-labelledby="pills-step1-tab">
+                            <!-- Step 1 Content -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-step2" role="tabpanel" aria-labelledby="pills-step2-tab">
+                            <!-- Step 2 Content -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-step3" role="tabpanel" aria-labelledby="pills-step3-tab">
+                            <!-- Step 3 Content -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-step4" role="tabpanel" aria-labelledby="pills-step4-tab">
+                            <!-- Step 4 Content -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-step5" role="tabpanel" aria-labelledby="pills-step5-tab">
+                            <!-- Step 5 Content -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-step6" role="tabpanel" aria-labelledby="pills-step6-tab">
+                            <!-- Step 6 Content -->
+                        </div>
+                    </div>
+                  </div>
+                  <!--begin::Form-->
+                  <form action="">
+                    <!--begin::company information-->
+                    <div class="card card-success border-success mb-4 m-2 mx-md-2">
+                      <!-- Card Header -->
+                      <div class="card-header p-1">
+                        <div class="card-title text-blue">Company Information</div>
+                      </div>
+                      <!-- Card Body -->
+                      <div class="card-body">
+                        <!-- Organization Name (English) -->
+                        <div class="mb-3">
+                          <div class="row align-items-center">
+                            <div class="col-12 col-md-4">
+                              <label for="inputProject" class="form-label">
+                                Name of Organization/Company/Industrial Project (English)
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" value="Uat Private Ltd." id="inputProject" name="orgNameEnglish" disabled>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Organization Name (Bangla) -->
+                        <div class="mb-3">
+                          <div class="row align-items-center">
+                            <div class="col-12 col-md-4">
+                              <label for="inputProjectBD" class="form-label">
+                                Name of Organization/Company/Industrial Project (Bangla)
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" value="Uat Private Ltd." id="inputProjectBD" name="orgNameBangla" disabled>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 row d-flex justify-content-between">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="orgType" class="form-label">
+                                Type of Organization
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="orgType" id="orgType" disabled>
+                                <option value="private_ltd" selected>Private Limited Company</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="orgStatus" class="form-label">
+                                Status of The Organization <i class="fas fa-question-circle text-dark mr-2"></i>
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="orgStatus" id="orgStatus">
+                                <option value="joint_venture" selected>Joint Venture</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 row d-flex justify-content-between">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="ownershipStatus" class="form-label">
+                                Ownership Status
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="ownershipStatus" id="ownershipStatus" disabled>
+                                <option value="partnership" selected>Partnership</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="countryOfOrigin" class="form-label">
+                                Country of Origin <i class="fas fa-question-circle text-dark mr-2"></i>
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="countryOfOrigin" id="countryOfOrigin">
+                                <option value="usa">United States of America</option>
+                                <option value="bangladesh" selected>Bangladesh</option>
+                                <option value="india">India</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="nepal">Nepal</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <div class="row align-items-center">
+                            <div class="col-12 col-md-2">
+                              <label for="projectName" class="form-label">
+                                Name of the project<span class="text-danger">*</span> <i class="fas fa-question-circle text-dark mr-2"></i>
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-10">
+                              <input type="text" class="form-control" id="projectName" name="projectName" required>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <div class="row align-items-center">
+                            <div class="col-12 col-md-2">
+                              <label for="businessSector" class="form-label">
+                                Business Sector (BBS Class Code)<span class="text-danger">*</span> <i class="fas fa-question-circle text-dark mr-2"></i>
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-10">
+                              <input type="text" class="form-control" id="businessSector" name="businessSector" required>
+                              <div id="emailHelp" class="form-text text-success">
+                                If you don't know the exact code, please select from the list.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <div class="row align-items-center">
+                            <div class="col-12 col-md-2">
+                              <label for="majorActivities" class="form-label">
+                                Major Activities in brief<span class="text-danger">*</span>
+                              </label>
+                            </div>
+                            <div class="col-12 col-md-10">
+                              <div class="input-group">
+                                <textarea class="form-control" name="majorActivities" id="majorActivities" aria-label="With textarea" maxlength="240" placeholder="This is a private limited company" required></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::company information-->
+
+
+                    <div class="card card-success border-success mb-4 m-2 mx-md-2">
+                      <div class="card-header p-1">
+                        <div class="card-title text-blue">
+                          Information of Principal Promoter/Chairman/Managing Director/CEO/Country Manager
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="country">Country</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="country" id="country" disabled>
+                                <option selected>Bangladesh</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="dob">Date of Birth</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="dob" id="dob" value="24-Jan-1993" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="nid">NID No.</label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="nid" id="nid" value="1731219198" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="designation">Designation</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="designation" id="designation" value="JSD" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="fullName">Full Name</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="fullName" id="fullName" value="Amanda Clements" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="district">District/City/State</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="district" id="district" disabled>
+                                <option selected>Bhola</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="policeStation">Police Station/Town<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="policeStation" id="policeStation" disabled>
+                                <option selected>Bhola Sadar</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="zipCode">Post/Zip Code</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="number" class="form-control" name="zipCode" id="zipCode" value="9150" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="address">House / Flat / Apartment, Road</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="address" id="address" value="2/A" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="telephone">Telephone No.</label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="telephone" id="telephone" value="+8801524263958" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="mobile">Mobile No.</label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="mobile" id="mobile" value="+8801524263958" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="fatherName">Father's Name<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="fatherName" id="fatherName" value="Charles Dickson" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="email">Email</label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="email" id="email" value="amanda@gmail.com" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="motherName">Mother's Name<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="motherName" id="motherName" value="Christine Joseph" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mb-3 d-flex justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="fax">Fax No.</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="fax" id="fax" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="spouseName">Spouse Name</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="spouseName" id="spouseName" value="" disabled>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="row align-items-center col-md-6">
+                          <div class="col-12 col-md-4">
+                            <label class="form-label" for="gender">Gender<span class="text-danger">*</span></label>
+                          </div>
+                          <div class="col-12 col-md-8">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" checked>
+                              <label class="form-check-label" for="genderMale">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                              <label class="form-check-label" for="genderFemale">Female</label>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>                    
+                    
+                    <!-- Office Address -->
+                    <div class="card card-primary card-success border-success mb-4 m-2 mx-md-2">
+                      <div class="card-header p-1">
+                        <div class="card-title text-blue">
+                          Office Address
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="division">Division<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="division" id="division">
+                                <option selected>Mymensingh</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="policeStation">Police Station<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="policeStation" id="policeStation">
+                                <option selected>Barhatta</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="district">District<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="district" id="district">
+                                <option selected>Netrakona</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="postCode">Post Code<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="postCode" id="postCode" value="1258">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="postOffice">Post Office<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="postOffice" id="postOffice" value="Baushi">
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="telephone">Telephone No.</label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <span class="input-group-text">+880</span>
+                                <input type="text" class="form-control" name="telephone" id="telephone" value="1812-345678">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="address">Address<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="address" id="address" value="3/A">
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="fax">Fax No.</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="fax" id="fax">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="mobile">Mobile No.<span class="text-danger">*</span></label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <span class="input-group-text">+880</span>
+                                <input type="text" class="form-control" name="mobile" id="mobile" value="1812-345678">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="email">Email<span class="text-danger">*</span></label> <i class="fas fa-question-circle text-dark mr-2"></i>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="email" id="email" value="clements@gmail.com">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Factory Address -->
+                    <div class="card card-primary card-success border-success mb-4 m-2 mx-md-2">
+                      <div class="card-header p-1">
+                        <div class="card-title text-blue">
+                          Factory Address
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryDistrict">District<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="factoryDistrict" id="factoryDistrict">
+                                <option selected>Netrakona</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryPoliceStation">Police Station<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <select class="form-select" name="factoryPoliceStation" id="factoryPoliceStation">
+                                <option selected>Barhatta</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryPostOffice">Post Office<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="factoryPostOffice" id="factoryPostOffice" value="Barhatta">
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryPostCode">Post Code<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="factoryPostCode" id="factoryPostCode" value="2052">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryAddress">Address<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="factoryAddress" id="factoryAddress" value="2/B">
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryTelephone">Telephone No.</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <span class="input-group-text">+880</span>
+                                <input type="text" class="form-control" name="factoryTelephone" id="factoryTelephone" value="1812-345678">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryMobile">Mobile No.<span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <span class="input-group-text">+880</span>
+                                <input type="text" class="form-control" name="factoryMobile" id="factoryMobile" value="1524-263958">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label class="form-label" for="factoryFax">Fax No.</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" name="factoryFax" id="factoryFax">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <fieldset class="border rounded-3 p-3 mb-4 m-2 mx-md-2">
+                      <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                        Please specify your desired office:<span class="text-danger">*</span>
+                      </legend>
+                      <p class="text-muted mb-2">
+                        N.B.: Select your preferred office division and factory district to select your desired office.
+                      </p>
+                      <div class="mb-3">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" name="desiredOffice" id="desiredOffice">
+                          <label class="form-check-label" for="desiredOffice">Divisional Office Mymensingh</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    
+                    <!--Registration Information-->
+                    <div class="card card-primary card-success border-success mb-2 m-2 mx-md-2">
+                      <div class="card-header p-1">
+                        <div class="card-title text-blue">
+                          Registration Information
+                        </div>
+                      </div>
+                      <!--project status-->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          1. Project Status
+                        </legend>
+                        <div class="row align-items-center col-md-6">
+                          <div class="col-12 col-md-4">
+                            <label for="projectStatus" class="form-label">Project Status</label>
+                          </div>
+                          <div class="col-12 col-md-8">                            
+                            <select id="projectStatus" name="projectStatus" class="form-select">
+                              <option selected>Select One</option>
+                            </select>
+                          </div>
+                        </div>
+                      </fieldset>
+                                       
+                      <!--Annual Production Capacity-->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          2. Annual Production Capacity
+                        </legend>
+                        <div class="table-responsive" style="font-size: 0.8rem;">
+                          <table class="table table-bordered border-success">
+                            <thead class="table-success align-middle text-center">
+                              <tr>
+                                <th>Name of Product<span class="text-danger">*</span></th>
+                                <th>Unit of Quantity<span class="text-danger">*</span></th>
+                                <th>Quantity<span class="text-danger">*</span></th>
+                                <th>Price (USD)<span class="text-danger">*</span></th>
+                                <th>Sales Value in BDT (in million)<span class="text-danger">*</span></th>
+                                <th>#</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input type="text" class="form-control" name="productName[]" placeholder="Product Name">
+                                </td>
+                                <td>
+                                  <select class="form-select" name="unitOfQuantity[]">
+                                    <option selected>Select one</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input type="number" class="form-control" name="quantity[]" placeholder="Quantity">
+                                </td>
+                                <td>
+                                  <input type="number" class="form-control" name="priceUSD[]" placeholder="Price (USD)">
+                                </td>
+                                <td>
+                                  <input type="number" class="form-control" name="salesValueBDT[]" placeholder="Sales Value">
+                                </td>
+                                <td>
+                                  <button type="button" class="btn btn-success">+</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <small class="text-muted mt-2">
+                          Exchange Rate Ref: <a href="#">Bangladesh Bank</a>. Please enter today’s exchange rate.
+                        </small>
+                      </fieldset>                      
+                      
+                      <!-- Date of Commercial Operation -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          3. Date of Commercial Operation
+                        </legend>
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-12">
+                            <div class="col-12 col-md-4">
+                              <label for="commercialDate" class="form-label">Date of Commercial Operation:</label>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="input-group">
+                                <input type="date" id="commercialDate" name="commercialDate" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <!-- Sales (in 100%) -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          4. Sales (in 100%)<span class="text-danger">*</span>
+                        </legend>
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-4">
+                            <div class="col-12 col-md-4">
+                              <label for="localSales" class="form-label">Local</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="number" id="localSales" name="localSales" class="form-control" placeholder="Local Sales">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-4">
+                            <div class="col-12 col-md-4">
+                              <label for="foreignSales" class="form-label">Foreign</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="number" id="foreignSales" name="foreignSales" class="form-control" placeholder="Foreign Sales">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-4">
+                            <div class="col-12 col-md-4 g-2">
+                              <label for="totalSales" class="form-label">Total in %</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="number" id="totalSales" name="totalSales" class="form-control" placeholder="Total Sales" disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <!-- Manpower of the Organization -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          5. Manpower of the Organization
+                        </legend>
+                        <div class="table-responsive">
+                          <table class="table table-bordered table-responsive-md">
+                            <thead class="table-success">
+                              <tr>
+                                <th colspan="3" class="text-center">Local (Bangladesh only)</th>
+                                <th colspan="3" class="text-center">Foreign (Abroad country)</th>
+                                <th colspan="1" class="text-center">Grand Total</th>
+                                <th colspan="2" class="text-center">Ratio</th>
+                              </tr>
+                              <tr class="text-center">
+                                <th>Executive</th>
+                                <th>Supporting Staff</th>
+                                <th>Total (a)</th>
+                                <th>Executive</th>
+                                <th>Supporting Staff</th>
+                                <th>Total (b)</th>
+                                <th>(a+b)</th>
+                                <th>Local</th>
+                                <th>Foreign</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" class="form-control" name="localExecutive" placeholder="Executive"></td>
+                                <td><input type="text" class="form-control" name="localSupportingStaff" placeholder="Supporting Staff"></td>
+                                <td><input type="text" class="form-control" name="localTotal" placeholder="Total (a)" disabled></td>
+                                <td><input type="text" class="form-control" name="foreignExecutive" placeholder="Executive"></td>
+                                <td><input type="text" class="form-control" name="foreignSupportingStaff" placeholder="Supporting Staff"></td>
+                                <td><input type="text" class="form-control" name="foreignTotal" placeholder="Total (b)" disabled></td>
+                                <td><input type="text" class="form-control" name="grandTotal" placeholder="(a+b)" disabled></td>
+                                <td><input type="text" class="form-control" name="localRatio" placeholder="Local" disabled></td>
+                                <td><input type="text" class="form-control" name="foreignRatio" placeholder="Foreign" disabled></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </fieldset>
+
+                      <!-- Investment -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          6. Investment<span class="text-danger">*</span>
+                        </legend>
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="landInvestment" class="form-label">Land (Million) <i class="fas fa-question-circle text-dark mr-2"></i></label> 
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="text" id="landInvestment" name="landInvestment" class="form-control" placeholder="Enter amount">
+                                <select class="form-select" name="landInvestmentCurrency">
+                                  <option value="BDT">BDT</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="buildingInvestment" class="form-label">Building (Million) <i class="fas fa-question-circle text-dark mr-2"></i></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="text" id="buildingInvestment" name="buildingInvestment" class="form-control" placeholder="Enter amount">
+                                <select class="form-select" name="buildingInvestmentCurrency">
+                                  <option value="BDT">BDT</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="machineryEquipment" class="form-label">Machinery & Equipment (Million) <span class="text-danger">*</span> <i class="fas fa-question-circle text-dark mr-2"></i></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="text" id="machineryEquipment" name="machineryEquipment" class="form-control" placeholder="Enter amount">
+                                <select class="form-select" name="machineryEquipmentCurrency">
+                                  <option value="BDT">BDT</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="otherInvestment" class="form-label">Others (Million) <i class="fas fa-question-circle text-dark mr-2"></i></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <div class="input-group">
+                                <input type="text" id="otherInvestment" name="otherInvestment" class="form-control" placeholder="Enter amount">
+                                <select class="form-select" name="otherInvestmentCurrency">
+                                  <option value="BDT">BDT</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-12 mb-3">
+                            <div class="col-12 col-md-5">
+                              <label for="workingCapital" class="form-label">Working Capital (Three Months) (Million) <i class="fas fa-question-circle text-dark mr-2"></i></label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="input-group">
+                                <input type="text" id="workingCapital" name="workingCapital" class="form-control" placeholder="Enter amount">
+                                <select class="form-select" name="workingCapitalCurrency">
+                                  <option value="BDT">BDT</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center justify-content-between col-md-12 mb-3">
+                            <div class="col-12 col-md-2">
+                              <label for="totalInvestmentMillion" class="form-label">Total Investment (Million) (BDT)</label>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <input type="text" id="totalInvestmentMillion" name="totalInvestmentMillion" class="form-control" disabled>
+                            </div>
+                            <div class="row align-items-center col-12 col-md-6">
+                              <div class="col-12 col-md-4">
+                                <label for="projectProfile" class="form-label mb-4">Project Profile:</label>
+                              </div>
+                              <div class="col-12 col-md-8">
+                                <input type="file" class="form-control" id="projectProfile" name="projectProfile">
+                                <small class="text-muted">N.B.: Maximum PDF file size 2MB</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="totalInvestmentBDT" class="form-label">Total Investment (BDT)</label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" id="totalInvestmentBDT" name="totalInvestmentBDT" class="form-control" disabled>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6 mb-3">
+                            <div class="col-12 col-md-4">
+                              <label for="dollarExchangeRate" class="form-label">Dollar Exchange Rate (USD) <span class="text-danger">*</span> <i class="fas fa-question-circle text-dark mr-2"></i></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" id="dollarExchangeRate" name="dollarExchangeRate" class="form-control" placeholder="Enter rate">
+                              <small>Exchange Rate Ref: <a href="#">Bangladesh Bank</a>. Please enter today’s exchange rate.</small>
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-12">
+                            <div class="col-12 col-md-2">
+                              <label for="totalFee" class="form-label">Total Fee (BDT)</label>
+                            </div>
+                            <div class="col-12 col-md-10">
+                              <div class="input-group">
+                                <input type="text" id="totalFee" name="totalFee" class="form-control" disabled>
+                                <button class="btn btn-success ms-2" type="button">Govt. Fees Calculator</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <!-- 7. Source of Finance -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          7. Source of Finance
+                        </legend>
+                        <div class="mb-3 table-responsive">
+                          <table class="table table-striped border">
+                            <tbody>
+                              <tr>
+                                <td class="col-4"><label for="localEquity" class="form-label">Local Equity (Million)</label></td>
+                                <td class="col-8"><input type="text" id="localEquity" name="localEquity" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="foreignEquity" class="form-label">Foreign Equity (Million)</label></td>
+                                <td class="col-8"><input type="text" id="foreignEquity" name="foreignEquity" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="totalEquity" class="form-label">Total Equity (Million)</label></td>
+                                <td class="col-8"><input type="text" id="totalEquity" name="totalEquity" class="form-control" disabled></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="localLoan" class="form-label">Local Loan (Million)</label></td>
+                                <td class="col-8"><input type="text" id="localLoan" name="localLoan" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="foreignLoan" class="form-label">Foreign Loan (Million)</label></td>
+                                <td class="col-8"><input type="text" id="foreignLoan" name="foreignLoan" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="totalLoan" class="form-label">Total Loan (Million)</label></td>
+                                <td class="col-8"><input type="text" id="totalLoan" name="totalLoan" class="form-control" disabled></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="totalFinancingMillion" class="form-label">Total Financing Million (Equity + Loan)</label></td>
+                                <td class="col-8"><input type="text" id="totalFinancingMillion" name="totalFinancingMillion" class="form-control" disabled></td>
+                              </tr>
+                              <tr>
+                                <td class="col-4"><label for="totalFinancingBDT" class="form-label">Total Financing BDT (Equity + Loan)</label></td>
+                                <td class="col-8"><input type="text" id="totalFinancingBDT" name="totalFinancingBDT" class="form-control" disabled></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="table-responsive">
+                          <div>
+                            <small><i class="fas fa-question-circle mr-2"></i> Country wise source of finance (Million BDT)</small>
+                          </div>
+                          <table class="table table-bordered border-success">
+                            <thead class="table-success">
+                              <tr>
+                                <th>Country<span class="text-danger">*</span></th>
+                                <th>Equity Amount (Million BDT)<span class="text-danger">*</span></th>
+                                <th>Loan Amount (Million BDT)<span class="text-danger">*</span></th>
+                                <th>#</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <select class="form-select" id="country" name="country[]">
+                                    <option selected>Select one</option>
+                                  </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="equityAmount[]" placeholder="Equity Amount"></td>
+                                <td><input type="text" class="form-control" name="loanAmount[]" placeholder="Loan Amount"></td>
+                                <td><button type="button" class="btn btn-success">+</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </fieldset>
+
+                      <!-- Public Utility Service -->
+                      <fieldset class="border rounded-3 p-3 m-4 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          8. Public Utility Service<strong class="text-danger">*</strong>
+                        </legend>
+                        <div class="mb-3">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="land" name="utilityServices[]" value="land">
+                            <label class="form-check-label" for="land">Land</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="electricity" name="utilityServices[]" value="electricity">
+                            <label class="form-check-label" for="electricity">Electricity</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="gas" name="utilityServices[]" value="gas">
+                            <label class="form-check-label" for="gas">Gas</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="telephone" name="utilityServices[]" value="telephone">
+                            <label class="form-check-label" for="telephone">Telephone</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="road" name="utilityServices[]" value="road">
+                            <label class="form-check-label" for="road">Road</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="water" name="utilityServices[]" value="water">
+                            <label class="form-check-label" for="water">Water</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="drainage" name="utilityServices[]" value="drainage">
+                            <label class="form-check-label" for="drainage">Drainage</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="others" name="utilityServices[]" value="others">
+                            <label class="form-check-label" for="others">Others</label>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <!-- Trade Licence Details -->
+                      <fieldset class="border rounded-3 p-3 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          9. Trade Licence Details
+                        </legend>
+                        <div class="mb-3 justify-content-between row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="tradeLicenseNumber" class="form-label">Trade Licence Number <span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" id="tradeLicenseNumber" name="tradeLicenseNumber">
+                            </div>
+                          </div>
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="issuingAuthority" class="form-label">Issuing Authority <span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" id="issuingAuthority" name="issuingAuthority">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <fieldset class="border rounded-3 p-3 m-2 mx-md-2">
+                        <legend class="float-none w-auto px-3" style="font-size: 1.2rem; font-weight: 600;">
+                          10. Tin
+                        </legend>
+                        <div class="mb-3 row">
+                          <div class="row align-items-center col-md-6">
+                            <div class="col-12 col-md-4">
+                              <label for="tinNumber" class="form-label">Tin Number <span class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-8">
+                              <input type="text" class="form-control" id="tinNumber" name="tinNumber">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <div class="d-flex justify-content-between m-2">
+                        <button type="submit" class="btn btn-success" name="saveAsDraft">Save as Draft</button>
+                        <div>
+                          <button type="button" class="btn btn-secondary" name="previous">Previous</button>
+                          <button type="button" class="btn btn-success" name="next">Next</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                  </form>
+                  
+                  <!--end::Form-->
+                </div>
+              </div>
+              <!--end::Col-->
+            </div>
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+        </div>
+        <!--end::App Content-->
+      </main>
+      <!--end::App Main-->
+      <!--begin::Footer-->
+      <footer class="app-footer">
+        <!--begin::To the end-->
+        <div class="float-end d-none d-sm-inline">Anything you want</div>
+        <!--end::To the end-->
+        <!--begin::Copyright-->
+        <strong>
+          Copyright &copy; 2014-2024&nbsp;
+          <a href="https://kztanvir.github.io" class="text-decoration-none">BA Automation</a>.
+        </strong>
+        All rights reserved.
+        <!--end::Copyright-->
+      </footer>
+      <!--end::Footer-->
+    </div>
+    <!--end::App Wrapper-->
+    <!--begin::Script-->
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
+      integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="../../dist/js/adminlte.js"></script>
+    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+    <script>
+      const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
+      const Default = {
+        scrollbarTheme: 'os-theme-light',
+        scrollbarAutoHide: 'leave',
+        scrollbarClickScroll: true,
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+        if (sidebarWrapper && typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== 'undefined') {
+          OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+            scrollbars: {
+              theme: Default.scrollbarTheme,
+              autoHide: Default.scrollbarAutoHide,
+              clickScroll: Default.scrollbarClickScroll,
+            },
+          });
+        }
+      });
+    </script>
+    <!--end::OverlayScrollbars Configure-->
+    <!-- OPTIONAL SCRIPTS -->
+    <!-- sortablejs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"
+      integrity="sha256-ipiJrswvAR4VAx/th+6zWsdeYmVae0iJuiR+6OqHJHQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- sortablejs -->
+    <script>
+      const connectedSortables = document.querySelectorAll('.connectedSortable');
+      connectedSortables.forEach((connectedSortable) => {
+        let sortable = new Sortable(connectedSortable, {
+          group: 'shared',
+          handle: '.card-header',
+        });
+      });
+
+      const cardHeaders = document.querySelectorAll('.connectedSortable .card-header');
+      cardHeaders.forEach((cardHeader) => {
+        cardHeader.style.cursor = 'move';
+      });
+    </script>
+    <!-- apexcharts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
+      integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ChartJS -->
+  </body>
+  <!--end::Body-->
+</html>

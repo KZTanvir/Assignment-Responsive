@@ -1,0 +1,18 @@
+/* Custom Style for Navigation Pills */
+.nav-pills .nav-link {
+    background-color: cadetblue;
+    border-radius: 8px;       
+    color: white;             
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nav-pills .nav-link.active {
+    background-color: yellowgreen; 
+    color: white;            
+}
+
+.nav-pills .nav-item {
+    margin-right: 5px; 
+    margin-bottom: 5px;
+}
